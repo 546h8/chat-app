@@ -1,0 +1,41 @@
+%head
+  %meta{"charset":"UTF-8"}
+  %link{"href": "_messages.scss", "rel": "stylesheet"}
+%body
+  .wrapper
+    .chat-main
+      .chat-main__group-info
+        .chat-main__group-info__group
+          .chat-main__group-info__group__group-name
+            test
+          .chat-main__group-info__group__member-name
+            Member:masa
+        %a.chat-main__group-info__edit{href: '#'}
+          Edit
+      .chat-main__message-list
+        .chat-main__message-list__Chat
+          .chat-main__message-list__Chat__chat1
+            .chat-main__message-list__Chat__chat1__user
+              .chat-main__message-list__Chat__chat1__user__name
+                masa
+              .chat-main__message-list__Chat__chat1__user__date
+                2019/11/20(Wed) 17:43:01
+            .chat-main__message-list__Chat__chat1__text
+              おはよう
+          .chat-main__message-list__Chat__chat2
+            .chat-main__message-list__Chat__chat2__user
+              .chat-main__message-list__Chat__chat2__user__name
+                masa
+              .chat-main__message-list__Chat__chat2__user__date
+                2019/11/20(Wed) 17:43:34
+            .chat-main__message-list__Chat__chat2__text
+              今日は夜から雨 
+      .chat-main__message-form
+        .chat-main__message-form__form
+          %textarea.chat-main__message-form__form__text{placeholder: 'type a message'}
+          %label.chat-main__message-form__form__post
+            .chat-main__message-form__form__post__icon{href: '#'}= icon('far', 'image')
+            %input.chat-main__message-form__form__post__input{type: "file"}
+        %input.chat-main__message-form__send{type: 'submit', value: 'Send'}
+          
+
