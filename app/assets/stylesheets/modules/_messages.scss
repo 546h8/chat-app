@@ -30,7 +30,6 @@
             color:#ffffff;
           }
           &__icon{
-            text-decoration:none;
             display: flex;
             align-items: center;
             padding-right:20px;
@@ -93,10 +92,12 @@
           width:72px;
           color:#38aef0;
           font-size:16px;
-          text-decoration: none;
           border:1px solid #38aef0;
           display: flex;
           align-items: center;
+          .text-deco-none{
+            text-decoration: none;
+          }
         }
       }
       &__message-list{
