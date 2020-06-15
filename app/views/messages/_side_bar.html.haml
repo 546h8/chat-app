@@ -13,8 +13,9 @@
     .side-bar__group-list
       - current_user.groups.each do |group|
         .side-bar__group-list__group
-          .side-bar__group-list__group__group-name
-            =group.name
-          .side-bar__group-list__message
-            メッセージはまだありません。
+          = link_to group_messages_path(group) do
+            .side-bar__group-list__group__group-name
+              =group.name
+            .side-bar__group-list__group__message
+              = group.show_last_message
 

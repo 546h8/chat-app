@@ -48,14 +48,19 @@
       margin: 20px 20px 0 20px;
       color:#ffffff;
       box-sizing: border-box;
-      &__group-name{
-        margin-bottom:5px ;
-        font-size:15px;  
-      }
-      &__message{
-        font-size:11px;
-        margin-bottom:40px;
-        color:#ffffff;
+      &__group{
+        text-decoration: none;
+        &__group-name{
+          margin-bottom:5px ;
+          // font-size:15px;  
+          color:#ffffff;
+        }
+        &__message{
+          font-size:11px;
+          margin-bottom:40px;
+          color:#ffffff;
+          color:#ffffff;
+        }
       }
     }
   }
@@ -106,7 +111,7 @@
         box-sizing: border-box;
         margin-left:40px;
         &__Chat{
-          margin-top:35px;
+          margin-top:50px;
           &__chat1{
             &__user{
               display: flex;
@@ -121,78 +126,57 @@
                 color:#999999;
                 padding-left:5px;
               }
+            }
             &__text{
               font-size: 14px;
               color:#434A54;
             }
-            }
           }
-          &__chat2{
-            margin-top:46px;
-            &__user{
-              display: flex;
-              margin-bottom: 12px;
-              &__name{
-                font-size:16px;
-                color: #333333;
-                font-weight: bold;
-              }
-              &__date{
-                font-size:12px;
-                color:#999999;
-                padding-left:5px;
-              }
-            &__text{
-              font-size: 14px;
-              color:#434A54;
-            }
-            }
-          }
-        }     
+        }
       }
-      &__message-form{
-        background-color: #d2d2d2;
-        height:90px;
+    &__message-form{
+      background-color: #d2d2d2;
+      height:90px;
+      display: flex;
+      align-items: center;
+      padding:0 40px; 
+      width:100%;
+      box-sizing: border-box;
+      .form{
         display: flex;
-        align-items: center;
-        padding:0 40px; 
-        width:100%;
-        box-sizing: border-box;
-        &__form{
-          display: flex;
-          padding:10px 0;
-          position:relative;
-          width: 100%;
-          &__text{
-            margin-right:15px;
-            height:50px;
-            width:100%;
-            line-height:50px;
-            padding-left:30px;
-            overflow:hidden;
-          }
-          &__post{
-            position: absolute;
-            text-align: left;
-            align-items: center;
-            top:10px;
-            right:10px;
-            &__icon{
-              font-size:25px;
-              padding: 7px 15px;
-            }
-            &__input{
-              display: none;
-            }
-          }
-        }
-        &__send{
-          width:100px;
+        padding:10px 0;
+        position:relative;
+        width: 100%;
+        .text{
+          margin-right:15px;
           height:50px;
-          background-color:#38AEF0;
-          color:white;
-          border:none;
+          width:100%;
+          line-height:50px;
+          padding-left:30px;
+          overflow:hidden;
+        }
+        .post{
+          position: absolute;
+          text-align: left;
+          align-items: center;
+          top:20px;
+          right:120px;
+          .icon{
+            font-size:25px;
+            
+          }
+          .input{
+            display: none;
+          }
         }
       }
+      .send{
+        width:100px;
+        height:50px;
+        background-color:#38AEF0;
+        color:white;
+        border:none;
+      }
+    }
   } 
 }

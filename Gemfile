@@ -60,3 +60,7 @@ gem 'font-awesome-sass'
 gem 'pry-rails'
 
 gem 'devise'
+
+gem "carrierwave"
+
+gem 'mini_magick'
