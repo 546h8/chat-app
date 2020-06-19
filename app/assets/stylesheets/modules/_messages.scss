@@ -49,17 +49,16 @@
       color:#ffffff;
       box-sizing: border-box;
       &__group{
-        text-decoration: none;
-        &__group-name{
-          margin-bottom:5px ;
-          // font-size:15px;  
+        a{
+          text-decoration: none;
           color:#ffffff;
-        }
-        &__message{
-          font-size:11px;
-          margin-bottom:40px;
-          color:#ffffff;
-          color:#ffffff;
+          .side-bar__group-list__group__group-name{
+            margin-bottom:5px ;
+          }
+          .side-bar__group-list__group__message{
+            font-size:11px;
+            margin-bottom:40px;
+          }
         }
       }
     }
@@ -107,11 +106,13 @@
       }
       &__message-list{
         background-color: #fafafa;
-        height: calc(100vh - 190px - 35px);
+        height: calc(100vh - 100px - 90px);
         box-sizing: border-box;
         margin-left:40px;
+        overflow: scroll;
+        padding-top:30px;
         &__Chat{
-          margin-top:50px;
+          box-sizing: border-box;
           &__chat1{
             &__user{
               display: flex;
@@ -130,6 +131,7 @@
             &__text{
               font-size: 14px;
               color:#434A54;
+              margin-bottom: 60px;
             }
           }
         }
