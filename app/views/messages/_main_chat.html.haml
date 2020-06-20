@@ -12,6 +12,7 @@
 
     .chat-main__message-list
       = render partial: 'message', collection: @messages
+      
     .chat-main__message-form
       = form_with model: [@group, @message], html: {class: "form"}, local: true do |f|
         =f.text_field :content, class: 'text', placeholder: 'type a message'
