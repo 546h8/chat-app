@@ -8,7 +8,7 @@
           = link_to edit_user_path(current_user) do
             =link_to new_group_path,class: 'edit' do
               =icon('far', 'edit') 
-            =link_to '#',class: 'cog' do
+            =link_to '/users/:id/edit',class: 'cog' do
               =icon('fas', 'cog')
     .side-bar__group-list
       - current_user.groups.each do |group|
