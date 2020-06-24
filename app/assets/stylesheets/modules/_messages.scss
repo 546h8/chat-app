@@ -101,6 +101,7 @@
           align-items: center;
           .text-deco-none{
             text-decoration: none;
+            color:#38aef0;
           }
         }
       }
@@ -108,7 +109,7 @@
         background-color: #fafafa;
         height: calc(100vh - 100px - 90px);
         box-sizing: border-box;
-        margin-left:40px;
+        padding-left:40px;
         overflow: scroll;
         padding-top:30px;
         &__Chat{
